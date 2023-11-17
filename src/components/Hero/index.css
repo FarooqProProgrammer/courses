@@ -1,0 +1,22 @@
+.HERO {
+  background-color: #f6f6f6;
+}
+.HERO .HeroHeading {
+  width: 50%;
+  @apply py-3 flex justify-center items-center;
+}
+.HERO .HeroHeading h4 {
+  color: #1A1A1A;
+  font-family: Be Vietnam Pro;
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%;
+  @apply text-center;
+}
+.HERO .HeroHeading h4 span {
+  @apply text-main-orange;
+}
+.HERO h4 {
+  @apply text-2xl uppercase;
+}/*# sourceMappingURL=index.css.map */
