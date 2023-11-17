@@ -3,15 +3,15 @@ import React from 'react'
 import "./index.css"
 
 
-export default function HeadingOne({text}) {
+export default function HeadingOne({text,desc,buttonText}) {
     return (
         <Box width={'100%'} py={4} display={'flex'} flexDirection={'column'} justifyContent={'start'} alignItems={'start'} gap={1}>
-            <Heading>{text}</Heading>
+            <Heading overflow={'hidden'}>{text}</Heading>
             <Flex width={'100%'} justifyContent={'space-between'} alignItems={'center'}>
                 <Text className='HeadingParagraph'>
-                    Lorem ipsum dolor sit amet consectetur. Tempus tincidunt etiam eget elit id imperdiet et. Cras eu sit dignissim lorem nibh et. Ac cum eget habitasse in velit fringilla feugiat senectus in.
+                    {desc}
                 </Text>
-                <Button className='bg-white'>See All</Button>
+                <Button className='bg-white'>{buttonText}</Button>
             </Flex>
         </Box>
     )
